@@ -1,0 +1,236 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+@font-face {
+    font-family: corbelb;
+    src: url(fonts/corbelb.ttf);
+}
+@font-face {
+    font-family: corbelb;
+    src: url(fonts/corbel.ttf);
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+ /* overflow-y:hidden;*/
+}
+h3{
+	font-size:2em;
+	font-weight:900;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+#textCenter{
+	text-align:center;
+	transition: all .5s ease-in-out;
+}
+#textCenter:hover{
+	letter-spacing:100px;
+}
+.corbelb{
+	font-family:corbelb;
+	letter-spacing:15px;
+	font-weight:900;
+}
+.rotate1{
+	transform: rotate(90deg);
+	transition: all .5s ease-in-out;
+	text-align:center;
+}
+.rotate2{
+	transform: rotate(270deg);
+	margin-top:200%;
+	transition: all .5s ease-in-out;
+	text-align:right;
+}
+.rotate1:hover{
+	letter-spacing:40px;
+}
+.rotate2:hover{
+	letter-spacing:30px;
+}
+/*video{
+	width: 100% !important;
+	height: auto !important;
+}*/
+#set{
+	margin-top:40%;
+}
+#set2{
+	margin-top:110%;
+}
+.writtenText{
+	font-family:corbel;
+	letter-spacing:10px;
+	text-align:right;
+	margin-right:10%;
+}
+.writtenText2{
+	font-family:corbel;
+	letter-spacing:4px;
+	text-align:left;
+	margin-right:10%;
+}
+.wt1{
+	padding-left:10px;
+}
+.wt5{
+	font-family:corbelb;
+	font-weight:900;
+	text-decoration:line-through;
+}
+.wt9{
+	color:white;
+	background-color:black;
+}
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+}
+.special{
+	margin-top:5%;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+ .writtenText{
+	font-size:0.5em;
+	letter-spacing:10px;
+	text-align:center;
+	margin-right:10%;
+}
+.writtenText2{
+	font-size:0.8em;
+	letter-spacing:4px;
+	text-align:center;
+}
+#set{
+	margin-top:0%;
+}
+#set2{
+	margin-top:0%;
+}
+video{
+	width: 100% !important;
+	height: 240px !important;
+	padding-right:20%;
+}
+.rotate2{
+	transform: rotate(270deg);
+	margin-top:2000%;
+	transition: all .5s ease-in-out;
+}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+ .writtenText{
+	font-size:0.5em;
+	letter-spacing:10px;
+	text-align:center;
+	margin-left:10%;
+}
+.writtenText2{
+	font-size:0.8em;
+	letter-spacing:4px;
+	text-align:center;
+	margin-left:10%;
+}
+#set{
+	margin-top:0%;
+}
+#set2{
+	margin-top:0%;
+}
+video{
+	width: 100% !important;
+	height: 240px !important;
+	padding-right:30%;
+}
+.rotate2{
+	transform: rotate(270deg);
+	margin-top:2000%;
+	transition: all .5s ease-in-out;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+.writtenText{
+	font-family:corbel;
+	letter-spacing:10px;
+	text-align:right;
+	margin-right:10%;
+	font-size:1em;
+}
+.writtenText2{
+	font-family:corbel;
+	letter-spacing:4px;
+	text-align:left;
+	margin-right:10%;
+	font-size:1em;
+}
+#set{
+	margin-top:40%;
+}
+#set2{
+	margin-top:110%;
+}
+video{
+	width: 100% !important;
+	height: 452px !important;
+	padding-right:20%;
+}
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+.writtenText{
+	font-family:corbel;
+	letter-spacing:10px;
+	text-align:right;
+	margin-right:10%;
+	font-size:1em;
+}
+.writtenText2{
+	font-family:corbel;
+	letter-spacing:4px;
+	text-align:left;
+	margin-right:10%;
+	font-size:1em;
+}
+#set{
+	margin-top:40%;
+}
+#set2{
+	margin-top:110%;
+}
+video{
+	width: 100% !important;
+	height: 452px !important;
+	padding-right:20%;
+}
+   
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>MYNDFUCK</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+	<script src="jquery.textillate.js"></script>
+	<script src="jquery.lettering.js"></script>
+	<script src="pace.min.js"></script>
+    <link href="animate.css" rel="stylesheet">
+	<link href="fillleft.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+	<!--<span>text</span>-->
+    <!-- Begin page content -->
+    <div class="container">
+      
+        <h3 class="corbelb" id="textCenter">NEWSBLOG</h3>
+    </div>
+	<div class="container special">
+			<div class="row">
+					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							  <h3 class="corbelb rotate1">ABOUT</h3>    
+					</div>
+				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					  <div id="set">
+							<div class="writtenText wt0">WELCOME</div>
+								<div class="writtenText wt1">TO</div><br>
+								<div class="writtenText wt2">THE</div><br>
+								<div class="writtenText wt3">PORTFOLIO</div> 
+								<div class="writtenText wt4">OF</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 TEST">
+								<video width="352" height="452" autoplay loop style="margin-left:15%;margin-top:-10%;margin-right:-10px;background-color:white">
+									<source src="untitled3.mp4" type="video/mp4">
+											Your browser does not support the video tag.		
+								</video> 
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					 <div id="set2">
+							<div class="writtenText2 wt5">DANIEL SPATZEK</div>
+								<div class="writtenText2 wt6">Freelance</div>
+								<div class="writtenText2 wt7">Designer</div>
+								<div class="writtenText2 wt8">And</div> 
+								<div class="writtenText2 wt9">
+	                                 <span id="myspan"></span>
+								</div>
+								<div class="writtenText2 wt10">from</div>
+								<div class="writtenText2 wt11">Austria.</div>
+						</div>
+					</div>
+				</div>
+					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+							<h3 class="corbelb rotate1">CONTACT</h3>   
+					</div>
+			</div>
+	</div>
+
+    <footer class="footer" style="position:fixed;">
+      <div class="container">
+        <h3 class="corbelb" id="textCenter">PROJECTS</h3>
+      </div>
+    </footer>
+  <script>
+  /*$(function () {
+	$('#textCenter').textillate();
+});*/
+var quotes = [
+  "Night Owl",
+  "Experience Engineer",
+  "Experience Engineer",
+  "cssda judge",
+  "web head"
+];
+
+// variable to keep track of last quote displayed
+var i = 0;
+
+// displays the next quote in the array
+var quoteTimer = function() {
+   
+  // if at end of array, reset
+  if (i >= quotes.length) {
+    i = 0;
+  }
+
+  // fade out previous quote, 
+  // while hidden, change the text to the next quote on the array
+  $('span').fadeOut(1000, function(){
+    $(this).text(quotes[i]);
+  });
+  
+  // display the quote
+  $('span').fadeIn();
+
+  // increment counter by one
+  i++;
+}
+
+
+$(document).ready(function() {
+   $('span').fadeOut(100, function(){
+    $(this).text(quotes[i]);
+  }); // initialize with first quote
+  setInterval(quoteTimer, 8000);
+});
+
+  </script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>
